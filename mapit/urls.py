@@ -8,7 +8,7 @@ handler500 = 'mapit.shortcuts.json_500'
 
 format_end = '(?:\.(?P<format>html|json))?'
 
-number = '-?\d*\.?\d+'
+number = '[+-]?(?:\d*\.)?\d+'
 
 urlpatterns = [
     url(r'^$', render, {'template_name': 'mapit/index.html'}, 'mapit_index'),
